@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marokko</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo header_logo">
+            <img
+                src="./icon/logo.svg" 
+                alt="Marokko" 
+                class="logo-img"
+                width="150"
+                height="62"
+            >
+        </a>
+        <nav class="header_menu-list">
+            <ul class="menu-list">
+                <li><a href="./about.html" class="menu-item">О нас</a></li>
+                <li><a href="./services.html" class="menu-item">Услуги</a></li>
+                <li><a href="./fabrics.html" class="menu-item">Ткани</a></li>
+                <li><a href="./contacts.html" class="menu-item">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header_action_inner">
+            <a href="tel:89006976992" class="phone_number">+7(900)697-69-92</a>
+            <div class="header_action_icons">
+                <a href="tel:89006976992" class="action_icon">
+                    <img 
+                        src="./icon/phone.svg" 
+                        alt="phone" 
+                        class="action-img"
+                        width="30"
+                        height="30"    
+                    >
+                </a>
+                <a href="https://t.me/stoppostpoststop" class="action_icon">
+                    <img 
+                        src="./icon/Telegram.svg" 
+                        alt="Telegram" 
+                        class="action-img"
+                        width="30"
+                        height="30"    
+                    >
+                </a>
+                <a href="#" class="action_icon">
+                    <img 
+                        src="./icon/whats up.svg" 
+                        alt="Whats Up" 
+                        class="action-img"
+                        width="30"
+                        height="30"    
+                    >
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <span class="scrollBar"></span>
+        <div class="popup">
+            <button class="close_popup-button" onclick="closePopup()"></button>
+            <p class="popup_text">Менеджер свяжется с Вами в ближайшее время</p>
+        </div>
+        <section class="top_inner">
+            <h1 class="top_title">
+                Ремонт, изготовление мягкой мебели<br> в Москве и Московской области
+            </h1>
+            <p class="top_text">
+                Выезд дизайнера бесплатно!
+            </p>
+            <button class="top_button button" id="top_button">
+                Узнать  стоимость
+            </button>
+        </section>
+        <section class="main_content_container">
+            <h2 class="main_content_title">
+                <span class="main_content_title-span">Marokko</span> - реставрация и перетяжка, которая подарит вторую жизнь вашей любимой мебели
+            </h2>
+            <div class="main_content_inners">
+                <div class="main_content_inner">
+                    <p class="main_content_text">Полная перетяжка <br> Новая обивка и идеально подобранная по цвету и фактуре ткань</p>
+                    <img 
+                        src="./img/перетяжка.png"
+                        alt="Пробники ткани"
+                        class="main_content-img"
+                        width="410"
+                        height="300"
+                    >
+                </div>
+                <div class="main_content_inner">
+                    <p class="main_content_text">Мебель на заказ <br> Воплотим вашу мечту в реальность</p>
+                    <img 
+                        src="./img/на заказ.png"
+                        alt="Коричневый диван"
+                        class="main_content-img"
+                        width="410"
+                        height="300"
+                    >
+                </div>
+            </div>
+        </section>
+        <section class="form" id="form">
+            <h2 class="form_title">
+                Оставьте заявку
+            </h2>
+            <form action="" method="post" class="form_inner" onsubmit="sendData(event)">
+                <input type="text" placeholder="Имя" class="form_input">
+                <input type="tel" placeholder="Телефон" class="form_input">
+                <input type="text" placeholder="Комментарий" class="form_input">
+                <!-- <input type="submit" value="Отправить форму" class="form_button"> -->
+                <button id="popup" class="form_button" onclick="openPopup()">Отправить форму</button>
+            </form>
+            <div id="response"></div>
+        </section>
+        <section class="work">
+            <h2 class="work_title">
+                Как мы работаем
+            </h2>
+            <div class="work_inners">
+                <div class="work_inner">
+                    <img 
+                        src="./img/палец для формы.png"
+                        alt="заполнение формы"
+                        class="work-img"
+                        width="200"
+                        height="190"
+                    >
+                    <h3 class="work_text">
+                        Заполните форму
+                    </h3>
+                </div>
+                <div class="work_inner">
+                    <img 
+                        src="./img/менеджер.png"
+                        alt="менеджер"
+                        class="work-img"
+                        width="200"
+                        height="190"
+                    >
+                    <h3 class="work_text">
+                        Связь с менеждером
+                    </h3>
+                </div>
+                <div class="work_inner">
+                    <img 
+                        src="./img/дизайнер.png"
+                        alt="рукопожатие"
+                        class="work-img"
+                        width="200"
+                        height="190"
+                    >
+                    <h3 class="work_text">
+                        Бесплатый выезд дизайнера
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantage_inner">
+                <img 
+                    src="./img/качество.png"
+                    alt="качество"
+                    class="advantage-img"
+                    width="150"
+                    height="150"
+                >
+                <h3 class="advantage_text">
+                    Качество
+                </h3>
+            </div>
+            <div class="advantage_inner">
+                <img 
+                    src="./img/индивид подход.png"
+                    alt="индивидуальный подход"
+                    class="advantage-img"
+                    width="150"
+                    height="150"
+                >
+                <h3 class="advantage_text">
+                    Индивидуальный подход
+                </h3>
+            </div>
+            <div class="advantage_inner">
+                <img 
+                    src="./img/опыт.png"
+                    alt="опыт"
+                    class="advantage-img"
+                    width="150"
+                    height="150"
+                >
+                <h3 class="advantage_text">
+                    Опыт
+                </h3>
+            </div>
+            <div class="advantage_inner">
+                <img 
+                    src="./img/низкие цены.png"
+                    alt="низкие цены"
+                    class="advantage-img"
+                    width="150"
+                    height="150"
+                >
+                <h3 class="advantage_text">
+                    Низкие цены
+                </h3>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_logo_inner">
+            <a href="./index.html" class="footer_logo logo">
+                <img 
+                    src="./icon/logo.svg"
+                    alt="Marokko"
+                    class="footer_logo-img"
+                    width="150"
+                    height="62"
+                >
+            </a>
+            <p class="footer_logo_text">
+                Не является публичной офертой
+            </p>
+        </div>
+        <div class="footer_text_inner">
+            <p class="footer_text">
+                Изготовление и ремонт мебели на заказ 
+            </p>
+            <p class="footer_text">
+                Все права защищены
+            </p>
+        </div>
+        <div class="footer_action_inner">
+            <a href="https://t.me/stoppostpoststop">
+                <img 
+                    src="./icon/Telegram.svg"
+                    alt="Telegram"
+                    class="footer_action-img"
+                    width="70"
+                    height="70"
+                >
+            </a>
+            <a href="#">
+                <img 
+                    src="./icon/whats up.svg"
+                    alt="Whats up"
+                    class="footer_action-img"
+                    width="70"
+                    height="70"
+                >
+            </a>
+            <a href="tel:89006976992">
+                <img 
+                    src="./icon/phone.svg"
+                    alt="Phonen"
+                    class="footer_action-img"
+                    width="70"
+                    height="70"
+                >
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

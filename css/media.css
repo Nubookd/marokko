@@ -1,0 +1,130 @@
+@media (max-width:1100px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    .footer_action_inner {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .price_inners {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:890px) {
+    .top_inner {
+        background: url(../img/главная\ фон\ мобил.png) center / cover no-repeat;
+        background-attachment: fixed;
+        padding-block: 40vh;
+    }
+    .services_top {
+        background: url(../img/услуги\ фон\ мобил.png) center / cover no-repeat;
+        background-attachment: fixed;
+        padding-block: 35vh;
+    }
+    .fabrics_top {
+        background: url(../img/фон\ ткань\ мобилка.png) center / cover no-repeat;
+        background-attachment: fixed;
+        padding-top: 55vw;
+        padding-bottom: 50vw;
+    }
+    .fabrics_title::first-line {
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: var(--dark-gray-color);
+    }
+    .contacts_top {
+        background: url(../img/фон\ контакты\ мобилка.png) center / cover no-repeat;
+        background-attachment: fixed;
+        padding-top: 55vw;
+        padding-bottom: 50vw;
+    }
+    .contacts_title {
+        color: white;
+    }
+    .work_inners {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .advantages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:720px) {
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer_action_inner {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .footer_action-img {
+        width: 50px;
+        aspect-ratio: 1;
+    }
+
+    .contacts_content {
+        min-height: 10vw;
+    }
+
+    .contacts_content_span {
+        height: 25vw;
+    }
+    
+    .contacts_content_inners {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: -55px;
+    }
+}
+
+@media (max-width:608px) {
+    .header {
+        flex-wrap: wrap;
+        padding-inline: 30px;
+        height: 150px;
+    }
+    .scrollBar {
+        top: 150px;
+    }
+    .header_menu-list {
+        order: 1;
+        padding-top: 10px;
+    }
+    input[type="text"], input[type="tel"] {
+        width: 80vw;
+    }
+    .form_button {
+        font-size: var(--font-second-title);
+    }
+}
+
+@media (max-width:540px) {
+    .advantages {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popup {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card_inner {
+        width: 230px;
+        border-radius: 15px;
+    }
+    .card_inner:hover {
+        height: 680px;
+    }
+    .card_inner:hover .card_content {
+        height: 620px;
+    }
+
+    .card-img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+}
